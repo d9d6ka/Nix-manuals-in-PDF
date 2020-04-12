@@ -4,5 +4,5 @@
 
 Manuals converted for convenient offline reading.
 
-Copyright by @NixOS.
+Copyright and/or Copyleft by @NixOS.
 
