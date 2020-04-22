@@ -7,7 +7,7 @@ Then:
 ```bash
 sudo apt install docbook5-xml docbook-xsl-ns xsltproc fop xmlto libxml2-utils xmlstarlet
 xsltproc --xinclude /usr/share/xml/docbook/stylesheet/docbook-xsl-ns/fo/docbook.xsl book.xml > nix_$(cat version.txt).fo
-fop -fo nix_$(cat version.txt).fo -pdf book.pdf
+fop -fo nix_$(cat version.txt).fo -pdf nix_$(cat version.txt).pdf
 ```
 
 ## XML manual modification
@@ -49,7 +49,7 @@ After that we can convert manual to PDF.
 ```bash
 sudo apt install docbook5-xml docbook-xsl-ns xsltproc fop xmlto libxml2-utils xmlstarlet
 xsltproc --xinclude /usr/share/xml/docbook/stylesheet/docbook-xsl-ns/fo/docbook.xsl book.xml > nixos_$(cat generated/version).fo
-fop -fo nixos_$(cat generated/version).fo -pdf book.pdf
+fop -fo nixos_$(cat generated/version).fo -pdf nixos_$(cat generated/version).pdf
 ```
 
 It's preferable to remove `wrap-option="no-wrap"` from `fo:block`'s in `book.fo`.
