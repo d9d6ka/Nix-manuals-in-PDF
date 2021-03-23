@@ -1,0 +1,96 @@
+<h2( class="title">.*?Chapter.*?</)h2>
+<h1\1h1>
+<h1 class="title">
+<h1>
+<h3(.*?>.*?Note*?</)h3>
+<b>Note</b>
+<h3(.*?>.*?Warning*?</)h3>
+<b>Warning</b>
+<h3(.*?>.*?Tip*?</)h3>
+<b>Tip</b>
+(<a [^>]*>)</a>([^<>]*)
+\1\2</a>
+(<a [^>]*>)</a>(<span><[^<>]*/></span>)
+\1\2</a>
+<a href="index.html#
+<a href="#
+<a href="options.html#
+<a href="#
+([0-9]{1,2})\.svg
+\1.png
+ 
+ 
+ — 
+ -- 
+…
+...
+–
+-
+−
+-
+’
+'
+‹
+&lt;
+›
+&gt;
+≤
+=&lt;
+€
+Euro
+<h2>(Operation.*?)</h2>
+<h3>\1</h3>
+<h3(.*?>.*?For module implementers:.*?</)h3>
+<b>For module implementers:</b>
+<h3(.*?>.*?Important.*?</)h3>
+<b>Important</b>
+<h2>Name</h2><p>([^ ]*)
+<h2>\1</h2><b>Name</b><p>\1
+<h2>Channel format</h2>
+<b>Channel format</b>
+<h2>Common options</h2>
+<b>Common options</b>
+<h3>Common query options</h3>
+<b>Common options</b>
+<h2>Description</h2>
+<b>Description</b>
+<h3>Description</h3>
+<b>Description</b>
+<h2>Environment variables</h2>
+<b>Environment variables</b>
+<h3>Environment variables</h3>
+<b>Environment variables</b>
+<h2>Example</h2>
+<b>Example</b>
+<h3>Example</h3>
+<b>Example</b>
+<h2>Examples</h2>
+<b>Examples</b>
+<h3>Examples</h3>
+<b>Examples</b>
+<h2>Files</h2>
+<b>Files</b>
+<h3>Flags</h3>
+<b>Flags</b>
+<h2>Options</h2>
+<b>Options</b>
+<h3>Queries</h3>
+<b>Queries</b>
+<h2>Selectors</h2>
+<b>Selectors</b>
+<h3>Source selection</h3>
+<b>Source selection</b>
+<h2>Synopsis</h2>
+<b>Synopsis</b>
+<h3>Synopsis</h3>
+<b>Synopsis</b>
+<h3>Versions</h3>
+<b>Versions</b>
+<head>.*</head>
+<head></head>
+<div class="navheader">.*<div class="book">
+<div class="book">
+<div class="navheader">.*<div class="appendix">
+<div class="appendix">
+<div class="navfooter">.*</body>
+</body>
